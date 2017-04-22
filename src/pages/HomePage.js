@@ -13,13 +13,13 @@ export default class HomePage extends React.Component {
   }
 
   componentDidMount() {
-    // 二维码1分钟更新一次
+    // 二维码1秒轮询一次
     this.flag = setInterval(() => {
       const now = Date.now();
       this.setState({
         now,
       });
-    }, 60*1000);
+    }, 1000);
     
     // 轮循付款结果
     this.resFlag = setInterval(() => {
@@ -51,7 +51,7 @@ export default class HomePage extends React.Component {
         </div>
         <div className="jse-home-sidebar">
           <p>微信扫码喝咖啡</p>
-          <img src={`images/wx.png?t=${now}`} />
+          <img src={`image/wechat.png?t=${now}`} />
           <cite>二维码一分钟更新一次</cite>
         </div>
       </div>
