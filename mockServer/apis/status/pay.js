@@ -5,6 +5,6 @@ module.exports = {
   method: 'GET',
   url: '/status/payment',
   data: {
-    status: 'success',  // success, failed, init
+    status: 'init',  // success, failed, init
   },
 };

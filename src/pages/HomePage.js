@@ -44,15 +44,30 @@ export default class HomePage extends React.Component {
     const { now } = this.state;
     return (
       <div className="jse-home">
-        <div className="jse-home-body">
-          <div className="jse-home-content">
-            这里是广告
-          </div>
+        <div className="jse-home-header">
+          <span>{new Date().toLocaleTimeString()}</span>
+          <span>30摄氏度</span>
         </div>
-        <div className="jse-home-sidebar">
-          <p>微信扫码喝咖啡</p>
-          <img src={`image/wechat.png?t=${now}`} />
-          <cite>二维码一分钟更新一次</cite>
+        <div className="jse-home-main">
+          <div className="jse-home-body">
+            <div className="jse-home-content">
+              这里是广告
+            </div>
+          </div>
+          <div className="jse-home-sidebar">
+            <p>微信扫码喝咖啡</p>
+            <div className="jse-home-sidebar-pay-img">
+              <div className="jse-home-sidebar-pay-img-item">
+                <img src={`image/ali.png?t=${now}`} />
+                <p>支付宝</p>
+              </div>
+              <div className="jse-home-sidebar-pay-img-item">
+                <img src={`image/wechat.png?t=${now}`} />
+                <p>微信支付</p>
+              </div>
+            </div>
+            <cite>二维码一分钟更新一次</cite>
+          </div>
         </div>
       </div>
     );
