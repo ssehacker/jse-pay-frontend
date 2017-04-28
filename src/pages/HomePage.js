@@ -10,6 +10,8 @@ export default class HomePage extends React.Component {
     this.state = {
       now: Date.now(),
     };
+    // console.log(screen.width);
+    // console.log(screen.height);
   }
 
   componentDidMount() {
@@ -46,27 +48,25 @@ export default class HomePage extends React.Component {
       <div className="jse-home">
         <div className="jse-home-header">
           <span>{new Date().toLocaleTimeString()}</span>
-          <span>30摄氏度</span>
+          <span>机器编号001</span>
         </div>
         <div className="jse-home-main">
           <div className="jse-home-body">
             <div className="jse-home-content">
-              这里是广告
+              这里是流媒体／平面广告
             </div>
           </div>
           <div className="jse-home-sidebar">
-            <p>微信扫码喝咖啡</p>
             <div className="jse-home-sidebar-pay-img">
               <div className="jse-home-sidebar-pay-img-item">
                 <img src={`image/ali.png?t=${now}`} />
-                <p>支付宝</p>
+                <p>支付宝支付</p>
               </div>
               <div className="jse-home-sidebar-pay-img-item">
                 <img src={`image/wechat.png?t=${now}`} />
                 <p>微信支付</p>
               </div>
             </div>
-            <cite>二维码一分钟更新一次</cite>
           </div>
         </div>
       </div>
