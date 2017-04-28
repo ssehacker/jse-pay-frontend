@@ -1,8 +1,8 @@
 .jse-home {
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
-	height: 100vh;
+	width: 800px;
+	height: 1280px;
 	font-size: 2rem;
 	background: #eee;
 	.jse-home-header {
@@ -13,25 +13,36 @@
 		font-size: 1.5rem;
 		background: #ddd;
 		span {
-			margin:0 1rem;
+			margin:0 2rem;
 		}
 	}
 	.jse-home-main {
 		flex-basis: 90%;
 		display: flex;
+		flex-direction: column;
 		.jse-home-body {
 			flex-basis: 70%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			padding-top: 3rem;
 			.jse-home-content {
 				width: 100%;
-				height: 80%;
+				height: 100%;
 				display: flex;
+				position: relative;
 				background: #75eb85;
 				color: white;
 				justify-content: center;
 				align-items: center;
+				font-size: 3rem;
+				& > p {
+					position: absolute;
+					right: 2rem;
+					bottom: 2rem;
+					font-size: 1.8rem;
+					color: #999;
+				}
 				img {
 					width: 100%;
 					height: 100%;
@@ -46,12 +57,11 @@
 			align-items: center;
 			flex-direction: column;
 			& > .jse-home-sidebar-pay-img {
+				display: flex;
+				padding: 4rem;
 				.jse-home-sidebar-pay-img-item {
-					width: 50%;
+					width: 40%;
 					margin: 0 auto;
-					&:first-child {
-						margin-bottom: 2rem;
-					}
 					img {
 						width: 100%;
 					}

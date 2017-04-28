@@ -51,11 +51,6 @@ export default class HomePage extends React.Component {
           <span>机器编号001</span>
         </div>
         <div className="jse-home-main">
-          <div className="jse-home-body">
-            <div className="jse-home-content">
-              这里是流媒体／平面广告
-            </div>
-          </div>
           <div className="jse-home-sidebar">
             <div className="jse-home-sidebar-pay-img">
               <div className="jse-home-sidebar-pay-img-item">
@@ -66,6 +61,12 @@ export default class HomePage extends React.Component {
                 <img src={`image/wechat.png?t=${now}`} />
                 <p>微信支付</p>
               </div>
+            </div>
+          </div>
+          <div className="jse-home-body">
+            <div className="jse-home-content">
+              流媒体／平面广告招商
+              <p>网络正常，系统工作正常</p>
             </div>
           </div>
         </div>
